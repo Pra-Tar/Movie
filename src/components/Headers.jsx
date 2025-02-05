@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Menu, X } from 'lucide-react';  // library used for common icons. 
+import { useState } from "react";
+import { Menu, X, Heart, Search } from "lucide-react"; // library used for common icons.
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -7,14 +7,54 @@ const Header = () => {
   return (
     <header className="bg-purple-400 text-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-
         <h1 className="text-xl font-bold">MOVIE</h1>
+        <div className="relative flex items-center">
+          <input
+            className="lg:w-80 md:w-50 sm:w-30 border rounded-full pr-4 pl-4 h-8"
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search..."
+          />
+          <Search size={23} className="text-white absolute right-3" />
+        </div>
 
-        <nav className="hidden md:flex space-x-6">
-          <a href="#" className="hover:text-gray-200">Home</a>
-          <a href="#" className="hover:text-gray-200">About</a>
-          <a href="#" className="hover:text-gray-200">Services</a>
-          <a href="#" className="hover:text-gray-200">Contact</a>
+        <nav className="hidden md:flex lg:space-x-12 md:space-x-8">
+          <a href="#" className="hover:text-gray-200">
+            Home
+          </a>
+          <a href="#" className="hover:text-gray-200">
+            Movies
+          </a>
+          <a href="#" className="hover:text-gray-200">
+            Series
+          </a>
+          <a href="#" className="hover:text-gray-200">
+            Kids
+          </a>
+          <a
+            href="#"
+            className="hover:text-gray-200 flex items-center border rounded-full pr-2 pl-2"
+          >
+            Watchlist{" "}
+            <div className="pl-2">
+              <Heart size={18} color="white" className="fill-white" />
+            </div>
+          </a>
+        </nav>
+        <nav className="hidden md:flex space-x-3">
+          <a
+            href="#"
+            className="hover:text-gray-200 border rounded-full pr-2 pl-2"
+          >
+            SignIn
+          </a>
+          <a
+            href="#"
+            className="hover:text-gray-200 border rounded-full pr-2 pl-2"
+          >
+            Register
+          </a>
         </nav>
 
         <button
@@ -28,10 +68,18 @@ const Header = () => {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <nav className="md:hidden bg-purple-400 flex flex-col space-y-2 p-4">
-          <a href="#" className="block py-2 hover:text-gray-200 ">Home</a>
-          <a href="#" className="block py-2 hover:text-gray-200">About</a>
-          <a href="#" className="block py-2 hover:text-gray-200">Services</a>
-          <a href="#" className="block py-2 hover:text-gray-200">Contact</a>
+          <a href="#" className="block py-2 hover:text-gray-200 ">
+            Home
+          </a>
+          <a href="#" className="block py-2 hover:text-gray-200">
+            About
+          </a>
+          <a href="#" className="block py-2 hover:text-gray-200">
+            Services
+          </a>
+          <a href="#" className="block py-2 hover:text-gray-200">
+            Contact
+          </a>
         </nav>
       )}
     </header>
@@ -39,3 +87,5 @@ const Header = () => {
 };
 
 export default Header;
+
+// https://www.figma.com/community/file/1372155613278155135/miru-video-movie-streaming-website-design-figma
