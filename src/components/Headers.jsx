@@ -36,7 +36,7 @@ const Header = () => {
             href="#"
             className="hover:text-gray-200 flex items-center border rounded-full pr-2 pl-2"
           >
-            Watchlist{" "}
+            Watchlist
             <div className="pl-2">
               <Heart size={18} color="white" className="fill-white" />
             </div>
@@ -72,14 +72,34 @@ const Header = () => {
             Home
           </a>
           <a href="#" className="block py-2 hover:text-gray-200">
-            About
+            Movies
           </a>
           <a href="#" className="block py-2 hover:text-gray-200">
-            Services
+            Series
           </a>
           <a href="#" className="block py-2 hover:text-gray-200">
-            Contact
+            Kids
           </a>
+          <div className="flex items-center">
+            <a href="#" className="block py-2 hover:text-gray-200 pr-2">
+              Watchlist
+            </a>
+            <Heart size={18} color="white" className="fill-white" />
+          </div>
+          <div className="md:hidden flex justify-between space-x-4 p-4">
+            <a
+              href="#"
+              className="hover:text-gray-200 border rounded-full pr-2 pl-2 w-full text-center"
+            >
+              SignIn
+            </a>
+            <a
+              href="#"
+              className="hover:text-gray-200 border rounded-full pr-2 pl-2 w-full text-center"
+            >
+              Register
+            </a>
+          </div>
         </nav>
       )}
     </header>
