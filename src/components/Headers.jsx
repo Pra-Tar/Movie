@@ -16,7 +16,10 @@ const Header = () => {
             id="search"
             placeholder="Search..."
           />
-          <Search size={23} className="text-white absolute right-3 cursor-pointer" />
+          <Search
+            size={23}
+            className="text-white absolute right-3 cursor-pointer"
+          />
         </div>
 
         {/* Desktop Navigation */}
@@ -36,11 +39,14 @@ const Header = () => {
           >
             Watchlist
             <div className="pl-2">
-              <Heart size={18} color="white" className="fill-white group-hover:stroke-purple-400" />
+              <Heart
+                size={18}
+                color="white"
+                className="fill-white group-hover:stroke-purple-400"
+              />
             </div>
           </a>
         </nav>
-
 
         {/* Sign In & Register (Desktop) */}
         <nav className="hidden md:flex space-x-3">
@@ -82,13 +88,14 @@ const Header = () => {
           <a href="#" className="block py-2 hover:text-gray-200">
             Kids
           </a>
-          <a
-            href="#"
-            className="group flex items-center rounded-full pr-2"
-          >
+          <a href="#" className="group flex items-center rounded-full pr-2">
             Watchlist
             <div className="pl-2">
-              <Heart size={18} color="white" className="fill-white group-hover:stroke-purple-400" />
+              <Heart
+                size={18}
+                color="white"
+                className="fill-white group-hover:stroke-purple-400"
+              />
             </div>
           </a>
           <div className="md:hidden flex justify-between space-x-4 p-4">
