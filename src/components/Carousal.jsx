@@ -63,19 +63,19 @@ const Carousal = () => {
             </div>
           </div>
         ))}
-      </div>
 
-      {/* DOTS */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-        {images.map((_, index) => (
-          <div
-            key={index}
-            className={`h-2 w-2 rounded-full ${
-              index === current ? "bg-white" : "bg-gray-400"
-            }`}
-            onClick={() => setCurrent(index)}
-          ></div>
-        ))}
+        {/* DOTS */}
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+          {images.map((_, index) => (
+            <div
+              key={index}
+              className={`h-2 w-2 rounded-full ${
+                index === current ? "bg-white" : "bg-gray-400"
+              }`}
+              onClick={() => setCurrent(index)}
+            ></div>
+          ))}
+        </div>
       </div>
     </>
   );
