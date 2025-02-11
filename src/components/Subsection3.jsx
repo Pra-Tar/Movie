@@ -1,6 +1,7 @@
 import { useRef } from "react";
 
-const Subsection1 = () => {
+
+const Subsection3 = ()=>{
   const carouselRef = useRef(null); // Create a ref for the carousel container
 
   const scrollLeft = () => {
@@ -19,7 +20,7 @@ const Subsection1 = () => {
 
   return (
     <div className="lg:m-12 md:m-10 sm:m-4 m-4">
-      <h1 className="text-white text-2xl font-bold mb-4">Trending Now</h1>
+      <h1 className="text-white text-2xl font-bold mb-4">Top 10 movies</h1>
 
       <div className="relative">
         {/* Left Scroll Button */}
@@ -56,6 +57,6 @@ const Subsection1 = () => {
       </div>
     </div>
   );
-};
+}
 
-export default Subsection1;
+export default Subsection3
