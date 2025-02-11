@@ -36,36 +36,38 @@ const Carousal = () => {
             }`}
             style={{ backgroundImage: `url(${img})` }}
           >
-            <div className="bg-opacity-30 backdrop-blur-sm border border-white/30 lg:ml-6 text-white p-3 sm:p-2 md:p-3 lg:p-4 rounded-lg flex flex-col justify-between h-auto sm:h-1/2 w-full sm:w-3/4 md:w-2/3 lg:w-1/3">
-              <div className="flex flex-wrap gap-2 text-xs font-extralight">
-                <span>Category</span>
-                <span>Year</span>
-                <span>Lang</span>
-                <span>Duration</span>
-              </div>
-              <div className="text-2xl sm:text-4xl lg:text-4xl font-bold">
-                TITLE
-              </div>
-              <div className="text-md sm:text-xl lg:text-xl font-extralight">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                delectus magni ducimus soluta. Corporis saepe ab ipsam nam
-                aspernatur, molestias ratione voluptatem quos placeat neque
-                iusto, nobis ad. Quae, illum!
-              </div>
-              <div className="flex text-sm flex-wrap gap-4 text-black">
-                <button className="border flex gap-x-1 items-center justify-center bg-white cursor-pointer rounded-2xl py-2 px-4 w-full sm:w-auto">
-                  <span>Watch Now</span> <Play size={18} />
-                </button>
-                <button className="border bg-white cursor-pointer rounded-2xl py-2 px-4 w-full sm:w-auto">
-                  Add to Watchlist
-                </button>
+            <div className="flex flex-col justify-end absolute bottom-0 inset-x-0 p-4">
+              <div className="bg-opacity-30 backdrop-blur-sm border border-white/30 lg:ml-6 text-white p-3 sm:p-2 md:p-3 lg:p-4 rounded-lg flex flex-col justify-between h-auto sm:h-1/2 w-full sm:w-3/4 md:w-2/3 lg:w-1/3">
+                <div className="flex flex-wrap gap-2 text-xs font-extralight">
+                  <span>Category</span>
+                  <span>Year</span>
+                  <span>Lang</span>
+                  <span>Duration</span>
+                </div>
+                <div className="text-2xl sm:text-4xl lg:text-4xl font-bold">
+                  TITLE
+                </div>
+                <div className="text-md sm:text-xl lg:text-xl font-extralight">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                  delectus magni ducimus soluta. Corporis saepe ab ipsam nam
+                  aspernatur, molestias ratione voluptatem quos placeat neque
+                  iusto, nobis ad. Quae, illum!
+                </div>
+                <div className="flex text-sm flex-wrap gap-4 text-black">
+                  <button className="border flex gap-x-1 items-center justify-center bg-white cursor-pointer rounded-2xl py-2 px-4 w-full sm:w-auto">
+                    <span>Watch Now</span> <Play size={18} />
+                  </button>
+                  <button className="border bg-white cursor-pointer rounded-2xl py-2 px-4 w-full sm:w-auto">
+                    Add to Watchlist
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         ))}
 
         {/* DOTS */}
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex space-x-2">
           {images.map((_, index) => (
             <div
               key={index}
