@@ -27,11 +27,11 @@ const Carousal = () => {
 
   return (
     <>
-      <div className="relative w-full h-[90vh] sm:h-[90vh] md:h-[70vh] lg:h-[80vh] overflow-hidden">
+      <div className="relative w-full h-[70vh] lg:h-[80vh] overflow-hidden">
         {images.map((img, index) => (
           <div
             key={index}
-            className={`absolute inset-0 bg-cover bg-center flex items-center w-full h-[90vh] sm:h-[90vh] md:h-[70vh] lg:h-[80vh] px-4 transition-opacity duration-700 ${
+            className={`absolute inset-0 bg-cover bg-center flex items-center w-full h-[70vh] lg:h-[80vh] px-4 transition-opacity duration-700 ${
               index === current ? "opacity-100" : "opacity-0"
             }`}
             style={{ backgroundImage: `url(${img})` }}
