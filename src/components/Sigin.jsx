@@ -1,6 +1,9 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 const Signin = () => {
   return (
-    <div className="w-full h-screen flex justify-center items-center bg-black">
+    <div className="w-full lg:h-[88vh] h-[83vh] flex justify-center items-center bg-black">
       <div className="w-full sm:w-96 h-auto bg-gray-300 shadow-lg rounded-lg p-8">
         <h2 className="text-2xl font-semibold text-center text-gray-700 mb-6">
           Sign In
@@ -75,9 +78,9 @@ const Signin = () => {
 
         <p className="text-center text-gray-500 mt-4">
           Don't have an account?{" "}
-          <a href="/signup" className="text-gray-700 hover:underline">
+          <Link to="/register" className="text-gray-700 hover:underline">
             Register
-          </a>
+          </Link>
         </p>
       </div>
     </div>
