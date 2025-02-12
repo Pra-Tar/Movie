@@ -1,5 +1,7 @@
+import MainContainer from "./MainContainer";
+
 const Series = () => {
-  return <></>;
+  return <MainContainer />;
 };
 
 export default Series;

@@ -1,5 +1,7 @@
+import MainContainer from "./MainContainer";
+
 const Kids = () => {
-  return <></>;
+  return <MainContainer />;
 };
 
 export default Kids;

@@ -1,5 +1,7 @@
+import MainContainer from "./MainContainer";
+
 const Movies = () => {
-  return <></>;
+  return <MainContainer />;
 };
 
 export default Movies;
